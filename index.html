@@ -1,0 +1,714 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head><script src="../../static.readdy.ai/static/e.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bonsai - Oasis of Serenity</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com/">
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&amp;display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../../cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css">
+    <script src="https://cdn.tailwindcss.com/3.4.16"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#57b5e7',
+                        secondary: '#8dd3c7'
+                    },
+                    borderRadius: {
+                        'none': '0px',
+                        'sm': '4px',
+                        DEFAULT: '8px',
+                        'md': '12px',
+                        'lg': '16px',
+                        'xl': '20px',
+                        '2xl': '24px',
+                        '3xl': '32px',
+                        'full': '9999px',
+                        'button': '8px'
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        :where([class^="ri-"])::before {
+            content: "\f3c2";
+        }
+        .hero-bg {
+            background-image: url('img/2.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+        .fade-in {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: opacity 0.8s ease, transform 0.8s ease;
+        }
+        .fade-in.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        .custom-checkbox {
+            appearance: none;
+            width: 1.25rem;
+            height: 1.25rem;
+            border: 2px solid #d1d5db;
+            border-radius: 4px;
+            background: white;
+            cursor: pointer;
+            position: relative;
+        }
+        .custom-checkbox:checked {
+            background: #57b5e7;
+            border-color: #57b5e7;
+        }
+        .custom-checkbox:checked::after {
+            content: '✓';
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: white;
+            font-size: 0.75rem;
+            font-weight: bold;
+        }
+        .video-container {
+            position: relative;
+            padding-bottom: 56.25%;
+            height: 0;
+            overflow: hidden;
+        }
+        .video-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+    </style>
+</head>
+<body class="bg-white">
+    <header class="bg-white shadow-sm fixed w-full top-0 z-50">
+        <nav class="w-full px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <div class="flex items-center">
+                    <div class="font-['Pacifico'] text-2xl text-gray-800">Bonsai</div>
+                </div>
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="#home" class="text-gray-700 hover:text-primary transition-colors">Home</a>
+                    <a href="#designer" class="text-gray-700 hover:text-primary transition-colors">Designer</a>
+                    <a href="#serenity" class="text-gray-700 hover:text-primary transition-colors">Serenity</a>
+                    <a href="#project" class="text-gray-700 hover:text-primary transition-colors">Project</a>
+                    <a href="#brochure" class="text-gray-700 hover:text-primary transition-colors">Brochure</a>
+                    <a href="#contact" class="text-gray-700 hover:text-primary transition-colors">Contact</a>
+                </div>
+                <div class="flex items-center space-x-4">
+                    <button class="text-sm text-gray-600 hover:text-primary">EN</button>
+                    <button class="text-sm text-gray-400">AR</button>
+                    <button class="md:hidden w-6 h-6 flex items-center justify-center">
+                        <i class="ri-menu-line text-xl"></i>
+                    </button>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="pt-16">
+        <section id="home" class="hero-bg min-h-screen flex items-center">
+            <div class="w-full px-4 sm:px-6 lg:px-8">
+                <div class="max-w-7xl mx-auto">
+                    <div class="grid lg:grid-cols-2 gap-12 items-center min-h-[80vh]">
+                        <div class="fade-in">
+                            <h1 class="text-5xl lg:text-7xl font-light text-gray-800 mb-6 leading-tight">
+                                Oasis of<br>
+                                <span class="text-primary">Serenity</span>
+                            </h1>
+                            <p class="text-lg text-gray-600 mb-8 leading-relaxed max-w-lg">
+                                Experience the perfect harmony between Japanese design philosophy and modern living. Where every detail speaks the language of tranquility and sophistication.
+                            </p>
+                            <div class="flex flex-col sm:flex-row gap-4">
+                                <button class="!rounded-button whitespace-nowrap bg-primary text-white px-8 py-3 hover:bg-opacity-90 transition-all">
+                                    Explore Project
+                                </button>
+                                <button class="!rounded-button whitespace-nowrap border border-gray-300 text-gray-700 px-8 py-3 hover:bg-gray-50 transition-all">
+                                    Watch Video
+                                </button>
+                            </div>
+                        </div>
+                        <div class="hidden lg:block"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="py-20 bg-gray-50">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="fade-in text-center mb-16">
+                    <h2 class="text-4xl font-light text-gray-800 mb-6">Serenity Video</h2>
+                    <p class="text-lg text-gray-600 max-w-2xl mx-auto">
+                        Discover the essence of our Japanese-inspired design philosophy through this immersive journey.
+                    </p>
+                </div>
+                <div class="fade-in max-w-4xl mx-auto">
+                    <div class="video-container rounded-2xl overflow-hidden shadow-2xl">
+                        <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" frameborder="0" allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="serenity" class="py-20">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="grid lg:grid-cols-2 gap-16 items-center">
+                    <div class="fade-in">
+                        <h2 class="text-4xl font-light text-gray-800 mb-8">Bonsai Philosophy</h2>
+                        <div class="space-y-6 text-gray-600 leading-relaxed">
+                            <p>
+                                Bonsai is a traditional Japanese art that involves growing trees in small containers. It is an art that blends horticulture, design, and meditation, requiring patience, precision, and skill. It is a craft passed down from generation to generation, rooted in a spirit of respect and contemplation.
+                            </p>
+                            <p>
+                                This quiet passion has become a reflection of refined taste and a part of the Japanese cultural identity, where great beauty is found in small details. Bonsai is often practiced by businessmen and members of the social elite, as owning a bonsai tree in Japan is considered a symbol of sophistication, calm presence, and deep appreciation for silent beauty.
+                            </p>
+
+                        </div>
+                        <a href="#serenity" class="inline-flex items-center text-primary hover:text-opacity-80 transition-colors mt-8">
+                            Learn More About Serenity
+                            <i class="ri-arrow-right-line ml-2"></i>
+                        </a>
+                    </div>
+                    <div class="fade-in">
+                        <img src="https://readdy.ai/api/search-image?query=traditional%20Japanese%20bonsai%20tree%20in%20elegant%20ceramic%20pot%2C%20minimalist%20zen%20garden%20setting%2C%20soft%20natural%20lighting%2C%20peaceful%20meditation%20space%2C%20traditional%20Japanese%20interior%20design%20elements%2C%20clean%20aesthetic%2C%20professional%20photography&amp;width=600&amp;height=700&amp;seq=bonsai001&amp;orientation=portrait" 
+                             alt="Bonsai Tree" class="w-full h-auto rounded-2xl shadow-lg object-cover">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="py-20 bg-gray-50">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="fade-in text-center mb-16">
+                    <h2 class="text-4xl font-light text-gray-800 mb-6">Attractive Investment</h2>
+                    <p class="text-lg text-gray-600 max-w-2xl mx-auto">
+                        Discover the exceptional investment opportunities that make Bonsai the perfect choice for discerning investors.
+                    </p>
+                </div>
+                <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <div class="fade-in bg-white p-8 rounded-2xl shadow-sm hover:shadow-lg transition-shadow">
+                        <div class="w-12 h-12 flex items-center justify-center bg-primary bg-opacity-10 rounded-lg mb-6">
+                            <i class="ri-checkbox-circle-line text-primary text-xl"></i>
+                        </div>
+                        <h3 class="text-xl font-medium text-gray-800 mb-4">Phased Pricing</h3>
+                        <p class="text-gray-600">Flexible payment structure designed to accommodate various investment preferences and financial planning strategies.</p>
+                    </div>
+                    <div class="fade-in bg-white p-8 rounded-2xl shadow-sm hover:shadow-lg transition-shadow">
+                        <div class="w-12 h-12 flex items-center justify-center bg-secondary bg-opacity-10 rounded-lg mb-6">
+                            <i class="ri-puzzle-2-line text-secondary text-xl"></i>
+                        </div>
+                        <h3 class="text-xl font-medium text-gray-800 mb-4">Flexible Payment Plan</h3>
+                        <p class="text-gray-600">Customizable payment options that adapt to your financial timeline and investment goals.</p>
+                    </div>
+                    <div class="fade-in bg-white p-8 rounded-2xl shadow-sm hover:shadow-lg transition-shadow">
+                        <div class="w-12 h-12 flex items-center justify-center bg-primary bg-opacity-10 rounded-lg mb-6">
+                            <i class="ri-refresh-line text-primary text-xl"></i>
+                        </div>
+                        <h3 class="text-xl font-medium text-gray-800 mb-4">Small Desired Units</h3>
+                        <p class="text-gray-600">Compact, efficiently designed living spaces that maximize value and minimize maintenance requirements.</p>
+                    </div>
+                    <div class="fade-in bg-white p-8 rounded-2xl shadow-sm hover:shadow-lg transition-shadow">
+                        <div class="w-12 h-12 flex items-center justify-center bg-secondary bg-opacity-10 rounded-lg mb-6">
+                            <i class="ri-line-chart-line text-secondary text-xl"></i>
+                        </div>
+                        <h3 class="text-xl font-medium text-gray-800 mb-4">Promising Rental Yields</h3>
+                        <p class="text-gray-600">Excellent return on investment potential with strong rental demand in this prime location.</p>
+                    </div>
+                    <div class="fade-in bg-white p-8 rounded-2xl shadow-sm hover:shadow-lg transition-shadow">
+                        <div class="w-12 h-12 flex items-center justify-center bg-primary bg-opacity-10 rounded-lg mb-6">
+                            <i class="ri-links-line text-primary text-xl"></i>
+                        </div>
+                        <h3 class="text-xl font-medium text-gray-800 mb-4">Rental Management</h3>
+                        <p class="text-gray-600">Professional property management services to ensure hassle-free rental income generation.</p>
+                    </div>
+                    <div class="fade-in bg-white p-8 rounded-2xl shadow-sm hover:shadow-lg transition-shadow">
+                        <div class="w-12 h-12 flex items-center justify-center bg-secondary bg-opacity-10 rounded-lg mb-6">
+                            <i class="ri-map-pin-line text-secondary text-xl"></i>
+                        </div>
+                        <h3 class="text-xl font-medium text-gray-800 mb-4">Metro Proximity</h3>
+                        <p class="text-gray-600">Strategic location with excellent connectivity to major transportation networks and city centers.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="py-20">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="grid lg:grid-cols-2 gap-16 items-center">
+                    <div class="fade-in">
+                        <img src="https://readdy.ai/api/search-image?query=modern%20residential%20building%20amenities%20showcase%2C%20two%20women%20in%20traditional%20Middle%20Eastern%20dress%20sitting%20on%20outdoor%20steps%2C%20contemporary%20architecture%20with%20clean%20lines%2C%20peaceful%20courtyard%20setting%2C%20natural%20lighting%2C%20professional%20lifestyle%20photography&amp;width=600&amp;height=800&amp;seq=amenities001&amp;orientation=portrait" 
+                             alt="Amenities" class="w-full h-auto rounded-2xl shadow-lg object-cover">
+                    </div>
+                    <div class="fade-in">
+                        <h2 class="text-4xl font-light text-gray-800 mb-12">Amenities</h2>
+                        <div class="space-y-8">
+                            <div class="flex items-start space-x-4">
+                                <div class="w-8 h-8 flex items-center justify-center bg-primary bg-opacity-10 rounded-lg flex-shrink-0">
+                                    <i class="ri-leaf-line text-primary"></i>
+                                </div>
+                                <div>
+                                    <h3 class="font-medium text-gray-800 mb-2">Serenity</h3>
+                                    <p class="text-sm text-gray-600">Japanese Gardens • Scented Hallways • Japanese Tearoom</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start space-x-4">
+                                <div class="w-8 h-8 flex items-center justify-center bg-secondary bg-opacity-10 rounded-lg flex-shrink-0">
+                                    <i class="ri-drop-line text-secondary"></i>
+                                </div>
+                                <div>
+                                    <h3 class="font-medium text-gray-800 mb-2">Highlights</h3>
+                                    <p class="text-sm text-gray-600">Water Features • Mist Cooling • Covered Gardens</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start space-x-4">
+                                <div class="w-8 h-8 flex items-center justify-center bg-primary bg-opacity-10 rounded-lg flex-shrink-0">
+                                    <i class="ri-movie-line text-primary"></i>
+                                </div>
+                                <div>
+                                    <h3 class="font-medium text-gray-800 mb-2">Entertainment</h3>
+                                    <p class="text-sm text-gray-600">Cinema Room • PlayStation Room • Recreation Area</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start space-x-4">
+                                <div class="w-8 h-8 flex items-center justify-center bg-secondary bg-opacity-10 rounded-lg flex-shrink-0">
+                                    <i class="ri-building-line text-secondary"></i>
+                                </div>
+                                <div>
+                                    <h3 class="font-medium text-gray-800 mb-2">Amenities</h3>
+                                    <p class="text-sm text-gray-600">Co-working Area • Reading Library • Clubhouse Lounge</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start space-x-4">
+                                <div class="w-8 h-8 flex items-center justify-center bg-primary bg-opacity-10 rounded-lg flex-shrink-0">
+                                    <i class="ri-service-line text-primary"></i>
+                                </div>
+                                <div>
+                                    <h3 class="font-medium text-gray-800 mb-2">Services</h3>
+                                    <p class="text-sm text-gray-600">Mini Market • Laundry Room • Delivery Lockers</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start space-x-4">
+                                <div class="w-8 h-8 flex items-center justify-center bg-secondary bg-opacity-10 rounded-lg flex-shrink-0">
+                                    <i class="ri-home-smile-line text-secondary"></i>
+                                </div>
+                                <div>
+                                    <h3 class="font-medium text-gray-800 mb-2">Features</h3>
+                                    <p class="text-sm text-gray-600">Smart Home • 24/7 Security • Underground Parking</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="py-20 bg-gray-50">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="fade-in text-center mb-16">
+                    <h2 class="text-4xl font-light text-gray-800 mb-6">Clubhouse</h2>
+                    <p class="text-lg text-gray-600 max-w-2xl mx-auto">
+                        Experience world-class facilities designed to enhance your lifestyle and well-being.
+                    </p>
+                </div>
+                <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <div class="fade-in bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-shadow">
+                        <img src="https://readdy.ai/api/search-image?query=traditional%20Japanese%20tea%20room%20interior%2C%20tatami%20mats%2C%20low%20wooden%20table%2C%20minimal%20zen%20design%2C%20natural%20lighting%2C%20peaceful%20meditation%20space%2C%20authentic%20cultural%20elements%2C%20clean%20aesthetic&amp;width=400&amp;height=250&amp;seq=tearoom001&amp;orientation=landscape" 
+                             alt="Japanese Tea Room" class="w-full h-48 object-cover">
+                        <div class="p-6">
+                            <h3 class="text-xl font-medium text-gray-800 mb-3">Japanese Tea Room</h3>
+                            <p class="text-gray-600 text-sm">Traditional tea ceremony space featuring authentic tatami mats and cultural elements for a truly immersive experience.</p>
+                        </div>
+                    </div>
+                    <div class="fade-in bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-shadow">
+                        <img src="https://readdy.ai/api/search-image?query=Japanese%20zen%20garden%20with%20carefully%20arranged%20stones%2C%20raked%20sand%20patterns%2C%20small%20bonsai%20trees%2C%20peaceful%20outdoor%20meditation%20space%2C%20traditional%20landscaping%2C%20serene%20atmosphere&amp;width=400&amp;height=250&amp;seq=garden001&amp;orientation=landscape" 
+                             alt="Japanese Gardens" class="w-full h-48 object-cover">
+                        <div class="p-6">
+                            <h3 class="text-xl font-medium text-gray-800 mb-3">Japanese Gardens</h3>
+                            <p class="text-gray-600 text-sm">Meticulously designed outdoor zen gardens with traditional landscaping elements for contemplation and relaxation.</p>
+                        </div>
+                    </div>
+                    <div class="fade-in bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-shadow">
+                        <img src="https://readdy.ai/api/search-image?query=modern%20cinema%20room%20with%20comfortable%20seating%2C%20premium%20audio%20visual%20equipment%2C%20contemporary%20interior%20design%2C%20luxury%20entertainment%20space%2C%20professional%20lighting&amp;width=400&amp;height=250&amp;seq=cinema001&amp;orientation=landscape" 
+                             alt="Cinema" class="w-full h-48 object-cover">
+                        <div class="p-6">
+                            <h3 class="text-xl font-medium text-gray-800 mb-3">Cinema</h3>
+                            <p class="text-gray-600 text-sm">State-of-the-art entertainment facility with premium audio-visual equipment and comfortable seating arrangements.</p>
+                        </div>
+                    </div>
+                    <div class="fade-in bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-shadow">
+                        <img src="https://readdy.ai/api/search-image?query=modern%20library%20interior%20with%20extensive%20book%20collection%2C%20comfortable%20reading%20chairs%2C%20natural%20lighting%2C%20quiet%20study%20areas%2C%20contemporary%20design%2C%20peaceful%20atmosphere&amp;width=400&amp;height=250&amp;seq=library001&amp;orientation=landscape" 
+                             alt="Library" class="w-full h-48 object-cover">
+                        <div class="p-6">
+                            <h3 class="text-xl font-medium text-gray-800 mb-3">Library</h3>
+                            <p class="text-gray-600 text-sm">Extensive collection of books and quiet study areas designed to inspire learning and intellectual growth.</p>
+                        </div>
+                    </div>
+                    <div class="fade-in bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-shadow">
+                        <img src="https://readdy.ai/api/search-image?query=modern%20co-working%20space%20with%20Japanese%20design%20influence%2C%20clean%20workstations%2C%20natural%20lighting%2C%20minimalist%20furniture%2C%20productive%20environment%2C%20contemporary%20office%20design&amp;width=400&amp;height=250&amp;seq=coworking001&amp;orientation=landscape" 
+                             alt="Co-working Space" class="w-full h-48 object-cover">
+                        <div class="p-6">
+                            <h3 class="text-xl font-medium text-gray-800 mb-3">Co-working Space</h3>
+                            <p class="text-gray-600 text-sm">Modern workspace inspired by Japanese balance between focus and flow, perfect for productivity and collaboration.</p>
+                        </div>
+                    </div>
+                    <div class="fade-in bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-shadow">
+                        <img src="https://readdy.ai/api/search-image?query=luxury%20recreation%20area%20with%20comfortable%20lounge%20seating%2C%20modern%20interior%20design%2C%20relaxation%20space%2C%20premium%20amenities%2C%20serene%20atmosphere%2C%20contemporary%20furniture&amp;width=400&amp;height=250&amp;seq=recreation001&amp;orientation=landscape" 
+                             alt="Recreation Area" class="w-full h-48 object-cover">
+                        <div class="p-6">
+                            <h3 class="text-xl font-medium text-gray-800 mb-3">Recreation Area</h3>
+                            <p class="text-gray-600 text-sm">Leisure facilities designed as a serene outlet for relaxation, featuring comfortable seating and calming ambiance.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="py-20">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="fade-in text-center mb-16">
+                    <h2 class="text-4xl font-light text-gray-800 mb-6">Vibrant Location</h2>
+                    <p class="text-lg text-gray-600 max-w-2xl mx-auto">
+                        Strategically positioned in the heart of the city with excellent connectivity and access to premium amenities.
+                    </p>
+                </div>
+                <div class="fade-in">
+                    <div class="bg-gray-100 rounded-2xl h-96 flex items-center justify-center" style="background-image: url('img/map.png'); background-size: cover; background-position: center;">
+                        <div class="bg-white bg-opacity-90 p-8 rounded-xl shadow-lg max-w-md text-center">
+                            <h3 class="text-2xl font-medium text-gray-800 mb-4">Prime Location Benefits</h3>
+                            <ul class="text-left space-y-2 text-gray-600">
+                                <li class="flex items-center">
+                                    <i class="ri-check-line text-primary mr-2"></i>
+                                    Metro connectivity within 5 minutes
+                                </li>
+                                <li class="flex items-center">
+                                    <i class="ri-check-line text-primary mr-2"></i>
+                                    Shopping centers nearby
+                                </li>
+                                <li class="flex items-center">
+                                    <i class="ri-check-line text-primary mr-2"></i>
+                                    Educational institutions
+                                </li>
+                                <li class="flex items-center">
+                                    <i class="ri-check-line text-primary mr-2"></i>
+                                    Healthcare facilities
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="py-20 bg-gray-50">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="fade-in text-center mb-16">
+                    <h2 class="text-4xl font-light text-gray-800 mb-6">Our Team</h2>
+                    <p class="text-lg text-gray-600 max-w-2xl mx-auto">
+                        Meet the visionary minds behind the Bonsai project, bringing together expertise in architecture, design, and development.
+                    </p>
+                </div>
+                <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <div class="fade-in bg-white p-8 rounded-2xl shadow-sm text-center">
+                        <img src="https://readdy.ai/api/search-image?query=professional%20Japanese%20architect%20portrait%2C%20middle-aged%20man%20in%20business%20attire%2C%20confident%20expression%2C%20modern%20office%20background%2C%20professional%20headshot%20photography&amp;width=300&amp;height=300&amp;seq=architect001&amp;orientation=squarish" 
+                             alt="Keiji Ashizawa" class="w-24 h-24 rounded-full mx-auto mb-6 object-cover">
+                        <h3 class="text-xl font-medium text-gray-800 mb-2">Keiji Ashizawa</h3>
+                        <p class="text-primary mb-4">Lead Architect</p>
+                        <p class="text-gray-600 text-sm">World-renowned Japanese architect celebrated for his "honest design" philosophy that embraces simplicity and functionality.</p>
+                    </div>
+                    <div class="fade-in bg-white p-8 rounded-2xl shadow-sm text-center">
+                        <img src="https://readdy.ai/api/search-image?query=professional%20Middle%20Eastern%20project%20manager%20portrait%2C%20confident%20business%20woman%2C%20modern%20office%20setting%2C%20professional%20attire%2C%20leadership%20presence&amp;width=300&amp;height=300&amp;seq=manager001&amp;orientation=squarish" 
+                             alt="Sarah Al-Rashid" class="w-24 h-24 rounded-full mx-auto mb-6 object-cover">
+                        <h3 class="text-xl font-medium text-gray-800 mb-2">Sarah Al-Rashid</h3>
+                        <p class="text-secondary mb-4">Project Director</p>
+                        <p class="text-gray-600 text-sm">Experienced project director with over 15 years in luxury residential development and cross-cultural design integration.</p>
+                    </div>
+                    <div class="fade-in bg-white p-8 rounded-2xl shadow-sm text-center">
+                        <img src="https://readdy.ai/api/search-image?query=professional%20interior%20designer%20portrait%2C%20creative%20professional%2C%20modern%20studio%20background%2C%20artistic%20personality%2C%20contemporary%20styling&amp;width=300&amp;height=300&amp;seq=designer001&amp;orientation=squarish" 
+                             alt="Michael Chen" class="w-24 h-24 rounded-full mx-auto mb-6 object-cover">
+                        <h3 class="text-xl font-medium text-gray-800 mb-2">Michael Chen</h3>
+                        <p class="text-primary mb-4">Interior Design Lead</p>
+                        <p class="text-gray-600 text-sm">Award-winning interior designer specializing in minimalist aesthetics and sustainable living spaces.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="py-20">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="fade-in text-center mb-16">
+                    <h2 class="text-4xl font-light text-gray-800 mb-6">Gallery</h2>
+                    <p class="text-lg text-gray-600 max-w-2xl mx-auto">
+                        Explore the stunning architecture and thoughtful design details that define the Bonsai experience.
+                    </p>
+                </div>
+                <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+                    <div class="fade-in">
+                        <img src="https://readdy.ai/api/search-image?query=modern%20residential%20building%20exterior%20with%20Japanese%20design%20elements%2C%20clean%20white%20architecture%2C%20geometric%20forms%2C%20natural%20lighting%2C%20contemporary%20minimalist%20style&amp;width=400&amp;height=300&amp;seq=gallery001&amp;orientation=landscape" 
+                             alt="Building Exterior" class="w-full h-64 object-cover rounded-xl hover:scale-105 transition-transform cursor-pointer">
+                    </div>
+                    <div class="fade-in">
+                        <img src="https://readdy.ai/api/search-image?query=modern%20apartment%20interior%20with%20Japanese%20minimalist%20design%2C%20clean%20lines%2C%20natural%20materials%2C%20spacious%20living%20area%2C%20contemporary%20furniture&amp;width=400&amp;height=300&amp;seq=gallery002&amp;orientation=landscape" 
+                             alt="Interior Living Space" class="w-full h-64 object-cover rounded-xl hover:scale-105 transition-transform cursor-pointer">
+                    </div>
+                    <div class="fade-in">
+                        <img src="https://readdy.ai/api/search-image?query=Japanese%20zen%20garden%20with%20water%20features%2C%20carefully%20arranged%20stones%2C%20peaceful%20outdoor%20space%2C%20traditional%20landscaping%2C%20serene%20atmosphere&amp;width=400&amp;height=300&amp;seq=gallery003&amp;orientation=landscape" 
+                             alt="Zen Garden" class="w-full h-64 object-cover rounded-xl hover:scale-105 transition-transform cursor-pointer">
+                    </div>
+                    <div class="fade-in">
+                        <img src="https://readdy.ai/api/search-image?query=modern%20kitchen%20with%20Japanese%20design%20influence%2C%20clean%20minimalist%20style%2C%20natural%20materials%2C%20contemporary%20appliances%2C%20spacious%20layout&amp;width=400&amp;height=300&amp;seq=gallery004&amp;orientation=landscape" 
+                             alt="Modern Kitchen" class="w-full h-64 object-cover rounded-xl hover:scale-105 transition-transform cursor-pointer">
+                    </div>
+                    <div class="fade-in">
+                        <img src="https://readdy.ai/api/search-image?query=luxury%20bathroom%20with%20Japanese%20spa%20elements%2C%20natural%20stone%2C%20minimalist%20design%2C%20contemporary%20fixtures%2C%20peaceful%20atmosphere&amp;width=400&amp;height=300&amp;seq=gallery005&amp;orientation=landscape" 
+                             alt="Luxury Bathroom" class="w-full h-64 object-cover rounded-xl hover:scale-105 transition-transform cursor-pointer">
+                    </div>
+                    <div class="fade-in">
+                        <img src="https://readdy.ai/api/search-image?query=rooftop%20terrace%20with%20city%20views%2C%20modern%20outdoor%20furniture%2C%20landscaping%20elements%2C%20contemporary%20design%2C%20urban%20living%20space&amp;width=400&amp;height=300&amp;seq=gallery006&amp;orientation=landscape" 
+                             alt="Rooftop Terrace" class="w-full h-64 object-cover rounded-xl hover:scale-105 transition-transform cursor-pointer">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="py-20 bg-gray-50">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="fade-in text-center mb-16">
+                    <h2 class="text-4xl font-light text-gray-800 mb-6">Contact Us</h2>
+                    <p class="text-lg text-gray-600 max-w-2xl mx-auto">
+                        Get in touch with our team to learn more about investment opportunities and schedule a private viewing.
+                    </p>
+                </div>
+                <div class="grid lg:grid-cols-2 gap-16">
+                    <div class="fade-in">
+                        <form class="space-y-6">
+                            <div class="grid md:grid-cols-2 gap-6">
+                                <div>
+                                    <label class="block text-sm font-medium text-gray-700 mb-2">First Name</label>
+                                    <input type="text" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent text-sm">
+                                </div>
+                                <div>
+                                    <label class="block text-sm font-medium text-gray-700 mb-2">Last Name</label>
+                                    <input type="text" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent text-sm">
+                                </div>
+                            </div>
+                            <div>
+                                <label class="block text-sm font-medium text-gray-700 mb-2">Email</label>
+                                <input type="email" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent text-sm">
+                            </div>
+                            <div>
+                                <label class="block text-sm font-medium text-gray-700 mb-2">Phone</label>
+                                <input type="tel" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent text-sm">
+                            </div>
+                            <div>
+                                <label class="block text-sm font-medium text-gray-700 mb-2">Message</label>
+                                <textarea rows="4" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent text-sm"></textarea>
+                            </div>
+                            <div class="flex items-center space-x-3">
+                                <input type="checkbox" class="custom-checkbox" id="recaptcha">
+                                <label for="recaptcha" class="text-sm text-gray-600">I'm not a robot</label>
+                            </div>
+                            <button type="submit" class="!rounded-button whitespace-nowrap w-full bg-primary text-white py-3 hover:bg-opacity-90 transition-colors">
+                                Send Message
+                            </button>
+                        </form>
+                    </div>
+                    <div class="fade-in">
+                        <div class="space-y-8">
+                            <div>
+                                <h3 class="text-xl font-medium text-gray-800 mb-4">Get in Touch</h3>
+                                <div class="space-y-4">
+                                    <div class="flex items-center space-x-3">
+                                        <div class="w-8 h-8 flex items-center justify-center bg-primary bg-opacity-10 rounded-lg">
+                                            <i class="ri-phone-line text-primary"></i>
+                                        </div>
+                                        <span class="text-gray-600">+966 11 123 4567</span>
+                                    </div>
+                                    <div class="flex items-center space-x-3">
+                                        <div class="w-8 h-8 flex items-center justify-center bg-primary bg-opacity-10 rounded-lg">
+                                            <i class="ri-mail-line text-primary"></i>
+                                        </div>
+                                        <span class="text-gray-600">info@bonsai.sa</span>
+                                    </div>
+                                    <div class="flex items-center space-x-3">
+                                        <div class="w-8 h-8 flex items-center justify-center bg-primary bg-opacity-10 rounded-lg">
+                                            <i class="ri-map-pin-line text-primary"></i>
+                                        </div>
+                                        <span class="text-gray-600">Riyadh, Saudi Arabia</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div>
+                                <h3 class="text-xl font-medium text-gray-800 mb-4">Office Hours</h3>
+                                <div class="space-y-2 text-gray-600">
+                                    <p>Sunday - Thursday: 9:00 AM - 6:00 PM</p>
+                                    <p>Friday - Saturday: Closed</p>
+                                </div>
+                            </div>
+                            <div>
+                                <h3 class="text-xl font-medium text-gray-800 mb-4">Follow Us</h3>
+                                <div class="flex space-x-4">
+                                    <a href="#" class="w-10 h-10 flex items-center justify-center bg-primary text-white rounded-lg hover:bg-opacity-80 transition-colors">
+                                        <i class="ri-facebook-fill"></i>
+                                    </a>
+                                    <a href="#" class="w-10 h-10 flex items-center justify-center bg-primary text-white rounded-lg hover:bg-opacity-80 transition-colors">
+                                        <i class="ri-twitter-fill"></i>
+                                    </a>
+                                    <a href="#" class="w-10 h-10 flex items-center justify-center bg-primary text-white rounded-lg hover:bg-opacity-80 transition-colors">
+                                        <i class="ri-instagram-fill"></i>
+                                    </a>
+                                    <a href="#" class="w-10 h-10 flex items-center justify-center bg-primary text-white rounded-lg hover:bg-opacity-80 transition-colors">
+                                        <i class="ri-linkedin-fill"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-gray-900 text-white py-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div>
+                    <div class="font-['Pacifico'] text-2xl mb-6">Bonsai</div>
+                    <p class="text-gray-400 mb-6">Creating harmonious living spaces inspired by Japanese design philosophy and modern luxury.</p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-gray-400 hover:text-white transition-colors">
+                            <i class="ri-facebook-fill text-xl"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white transition-colors">
+                            <i class="ri-twitter-fill text-xl"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white transition-colors">
+                            <i class="ri-instagram-fill text-xl"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white transition-colors">
+                            <i class="ri-linkedin-fill text-xl"></i>
+                        </a>
+                    </div>
+                </div>
+                <div>
+                    <h3 class="text-lg font-medium mb-6">Quick Links</h3>
+                    <ul class="space-y-3">
+                        <li><a href="#home" class="text-gray-400 hover:text-white transition-colors">Home</a></li>
+                        <li><a href="#designer" class="text-gray-400 hover:text-white transition-colors">Designer</a></li>
+                        <li><a href="#serenity" class="text-gray-400 hover:text-white transition-colors">Serenity</a></li>
+                        <li><a href="#project" class="text-gray-400 hover:text-white transition-colors">Project</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-lg font-medium mb-6">Services</h3>
+                    <ul class="space-y-3">
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors">Investment Consultation</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors">Property Management</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors">After Sales Service</a></li>
+                        <li><a href="#contact" class="text-gray-400 hover:text-white transition-colors">Contact Support</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-lg font-medium mb-6">Contact Info</h3>
+                    <ul class="space-y-3 text-gray-400">
+                        <li>+966 11 123 4567</li>
+                        <li>info@bonsai.sa</li>
+                        <li>Riyadh, Saudi Arabia</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 mt-12 pt-8 text-center text-gray-400">
+                <p>&copy; 2025 Bonsai. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script id="scroll-animations">
+        document.addEventListener('DOMContentLoaded', function() {
+            const observerOptions = {
+                threshold: 0.1,
+                rootMargin: '0px 0px -50px 0px'
+            };
+
+            const observer = new IntersectionObserver(function(entries) {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('visible');
+                    }
+                });
+            }, observerOptions);
+
+            document.querySelectorAll('.fade-in').forEach(el => {
+                observer.observe(el);
+            });
+        });
+    </script>
+
+    <script id="smooth-scrolling">
+        document.addEventListener('DOMContentLoaded', function() {
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function (e) {
+                    e.preventDefault();
+                    const target = document.querySelector(this.getAttribute('href'));
+                    if (target) {
+                        target.scrollIntoView({
+                            behavior: 'smooth',
+                            block: 'start'
+                        });
+                    }
+                });
+            });
+        });
+    </script>
+
+    <script id="form-handling">
+        document.addEventListener('DOMContentLoaded', function() {
+            const form = document.querySelector('form');
+            if (form) {
+                form.addEventListener('submit', function(e) {
+                    e.preventDefault();
+                    
+                    const checkbox = document.getElementById('recaptcha');
+                    if (!checkbox.checked) {
+                        alert('Please verify that you are not a robot.');
+                        return;
+                    }
+                    
+                    const formData = new FormData(form);
+                    console.log('Form submitted:', Object.fromEntries(formData));
+                    alert('Thank you for your message. We will get back to you soon!');
+                });
+            }
+        });
+    </script>
+<script>
+    !function (t, e) { var o, n, p, r; e.__SV || (window.posthog = e, e._i = [], e.init = function (i, s, a) { function g(t, e) { var o = e.split("."); 2 == o.length && (t = t[o[0]], e = o[1]), t[e] = function () { t.push([e].concat(Array.prototype.slice.call(arguments, 0))) } } (p = t.createElement("script")).type = "text/javascript", p.crossOrigin = "anonymous", p.async = !0, p.src = s.api_host.replace(".i.posthog.com", "-assets.i.posthog.com") + "/static/array.js", (r = t.getElementsByTagName("script")[0]).parentNode.insertBefore(p, r); var u = e; for (void 0 !== a ? u = e[a] = [] : a = "posthog", u.people = u.people || [], u.toString = function (t) { var e = "posthog"; return "posthog" !== a && (e += "." + a), t || (e += " (stub)"), e }, u.people.toString = function () { return u.toString(1) + ".people (stub)" }, o = "init capture register register_once register_for_session unregister unregister_for_session getFeatureFlag getFeatureFlagPayload isFeatureEnabled reloadFeatureFlags updateEarlyAccessFeatureEnrollment getEarlyAccessFeatures on onFeatureFlags onSessionId getSurveys getActiveMatchingSurveys renderSurvey canRenderSurvey getNextSurveyStep identify setPersonProperties group resetGroups setPersonPropertiesForFlags resetPersonPropertiesForFlags setGroupPropertiesForFlags resetGroupPropertiesForFlags reset get_distinct_id getGroups get_session_id get_session_replay_url alias set_config startSessionRecording stopSessionRecording sessionRecordingStarted captureException loadToolbar get_property getSessionProperty createPersonProfile opt_in_capturing opt_out_capturing has_opted_in_capturing has_opted_out_capturing clear_opt_in_out_capturing debug".split(" "), n = 0; n < o.length; n++)g(u, o[n]); e._i.push([i, s, a]) }, e.__SV = 1) }(document, window.posthog || []);
+    posthog.init('phc_t9tkQZJiyi2ps9zUYm8TDsL6qXo4YmZx0Ot5rBlAlEd', {
+        api_host: 'https://us.i.posthog.com',
+        autocapture: false,
+        capture_pageview: false,
+        capture_pageleave: false,
+        capture_performance: {
+            web_vitals: false,
+        },
+        rageclick: false,
+    })
+    window.shareKey = 'lH0D0k9g2QICJnaIG95PSg';
+    window.host = 'readdy.ai';
+</script>
+<script src="../../static.readdy.ai/static/share.js"></script></body>
+
+<!-- Mirrored from readdy.link/share/db417cb0e15a433a145b8156503386d4 by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 17 Nov 2025 08:36:11 GMT -->
+</html>
